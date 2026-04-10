@@ -1,0 +1,261 @@
+# Translation template for Pyrogenesis.
+# Copyright (C) 2024 Wildfire Games
+# This file is distributed under the same license as the Pyrogenesis project.
+# Translators:
+# rentt777, 2013
+# scinart, 2018
+# Andersson Yang, 2017
+# Brett Dong, 2016
+# Charles Yang, 2018
+# Christian Xia, 2016
+# DuckSoft, 2018
+# Feng Chang, 2018
+# helinb, 2015
+# hiahoo lee, 2014
+# hyln9, 2014
+# jiajinming, 2014
+# Jiang Chen, 2018
+# jiegec, 2015
+# jun dong, 2018
+# Kelvin Cooper, 2016
+# Lawrence Maxwell, 2018
+# levinit levin, 2018
+# liu lizhi, 2014,2018
+# loms126, 2014
+# relaxbsd, 2014
+# samrmrf, 2013
+# Sediment AC, 2017
+# simsilver, 2014
+# Tianran Yao, 2016
+# Sense T, 2016
+# Vince Luo, 2017
+# volcano song, 2018
+# Wolfson Liu, 2020
+# wuxb, 2014
+# xingtong, 2013
+# yhcvb, 2014
+# yukisola, 2014
+# Zhang Wei, 2019
+# Zou Yi, 2017
+# 吴善俊, 2014
+# 周雪琪, 2025
+# 周雪琪, 2025
+# 神楽坂·喵, 2017
+# 武军 李, 2017
+# 玉堂白鹤, 2015,2021
+msgid ""
+msgstr ""
+"Project-Id-Version: 0 A.D.\n"
+"POT-Creation-Date: 2024-08-21 03:51+0200\n"
+"PO-Revision-Date: 2013-06-22 12:54+0000\n"
+"Last-Translator: 周雪琪, 2025\n"
+"Language-Team: Chinese (http://app.transifex.com/wildfire-games/0ad/language/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: i18n/L10n.cpp:346
+msgid "Long strings"
+msgstr "长字符串"
+
+#: lobby/XmppClient.cpp:1043
+msgid "unknown subtype (see logs)"
+msgstr "未知子类型（见日志）"
+
+#: lobby/XmppClient.cpp:1374
+msgid "The certificate is not trusted."
+msgstr "证书不受信任。"
+
+#: lobby/XmppClient.cpp:1375
+msgid "The certificate hasn't got a known issuer."
+msgstr "证书无已知的发行人。"
+
+#: lobby/XmppClient.cpp:1376
+msgid "The certificate has been revoked."
+msgstr "证书已被撤销。"
+
+#: lobby/XmppClient.cpp:1377
+msgid "The certificate has expired."
+msgstr "证书已过期。"
+
+#: lobby/XmppClient.cpp:1378
+msgid "The certificate is not yet active."
+msgstr "证书尚未激活。"
+
+#: lobby/XmppClient.cpp:1379
+msgid "The certificate has not been issued for the peer connected to."
+msgstr "尚未给连接者授权证书。"
+
+#: lobby/XmppClient.cpp:1380
+msgid "The certificate signer is not a certificate authority."
+msgstr "证书签署者‌为非法授权。"
+
+#: lobby/XmppClient.cpp:1402 lobby/XmppClient.cpp:1446
+#: lobby/XmppClient.cpp:1485
+msgid "Error"
+msgstr "错误"
+
+#: lobby/XmppClient.cpp:1405 lobby/XmppClient.cpp:1449
+msgid "No error"
+msgstr "没有错误"
+
+#: lobby/XmppClient.cpp:1407
+msgid "Player already logged in"
+msgstr "玩家账户已登录"
+
+#: lobby/XmppClient.cpp:1409
+msgid "Forbidden"
+msgstr "禁止"
+
+#: lobby/XmppClient.cpp:1411
+msgid "Internal server error"
+msgstr "内部服务器错误"
+
+#: lobby/XmppClient.cpp:1415
+msgid "Not allowed"
+msgstr "不允许"
+
+#: lobby/XmppClient.cpp:1416
+msgid "Not authorized"
+msgstr "未授权"
+
+#: lobby/XmppClient.cpp:1419
+msgid "Recipient temporarily unavailable"
+msgstr "收件人暂时不可用"
+
+#: lobby/XmppClient.cpp:1421
+msgid "Registration required"
+msgstr "允许注册"
+
+#: lobby/XmppClient.cpp:1425
+msgid "Service unavailable"
+msgstr "服务器不可用"
+
+#: lobby/XmppClient.cpp:1430 lobby/XmppClient.cpp:1469
+msgid "Unknown error"
+msgstr "未知错误"
+
+#: lobby/XmppClient.cpp:1450
+msgid "Stream error"
+msgstr "数据传输异常"
+
+#: lobby/XmppClient.cpp:1451
+msgid "The incoming stream version is unsupported"
+msgstr "传入的数据版本不兼容"
+
+#: lobby/XmppClient.cpp:1452
+msgid "The stream has been closed by the server"
+msgstr "服务器已关闭数据"
+
+#: lobby/XmppClient.cpp:1456
+msgid "An I/O error occurred"
+msgstr "产生一条“输入/输出”错误"
+
+#: lobby/XmppClient.cpp:1458
+msgid "The connection was refused by the server"
+msgstr "服务器拒绝连接"
+
+#: lobby/XmppClient.cpp:1459
+msgid "Resolving the server's hostname failed"
+msgstr "服务器游戏名解析失败"
+
+#: lobby/XmppClient.cpp:1460
+msgid "This system is out of memory"
+msgstr "系统内存不足"
+
+#: lobby/XmppClient.cpp:1462
+msgid ""
+"The server's certificate could not be verified or the TLS handshake did not "
+"complete successfully"
+msgstr "服务器证书验证失败或TLS握手失败"
+
+#: lobby/XmppClient.cpp:1463
+msgid "The server did not offer required TLS encryption"
+msgstr "服务器未提供所需的TLS加密"
+
+#: lobby/XmppClient.cpp:1465
+msgid "Authentication failed. Incorrect password or account does not exist"
+msgstr "验证失败。密码错误或用户ID不存在"
+
+#: lobby/XmppClient.cpp:1466
+msgid "The user or system requested a disconnect"
+msgstr "账户或系统请求断开连接"
+
+#: lobby/XmppClient.cpp:1467
+msgid "There is no active connection"
+msgstr "没有活动连接"
+
+#: lobby/XmppClient.cpp:1488
+msgid "Your account has been successfully registered"
+msgstr "你的帐户已成功注册。"
+
+#: lobby/XmppClient.cpp:1489
+msgid "Not all necessary information provided"
+msgstr "没有提供所有必须的信息"
+
+#: lobby/XmppClient.cpp:1490
+msgid "Username already exists"
+msgstr "用户ID已被他人使用"
+
+#: ps/ModIo.cpp:266
+#, c-format
+msgid "Failure while starting querying for game id. Error: %s; %s."
+msgstr "启用游戏ID查询时失败。错误: %s;%s"
+
+#: ps/ModIo.cpp:296
+#, c-format
+msgid "Failure while starting querying for mods. Error: %s; %s."
+msgstr "启动模组查询时失败。错误：%s, %s"
+
+#: ps/ModIo.cpp:322
+#, c-format
+msgid "Could not create mod directory: %s."
+msgstr "无法创建模组目录： %s"
+
+#: ps/ModIo.cpp:347
+#, c-format
+msgid "Could not open temporary file for mod download: %s."
+msgstr "临时文件夹无法下载模组：%s"
+
+#: ps/ModIo.cpp:357
+#, c-format
+msgid "Failed to start the download. Error: %s; %s."
+msgstr "下载启动失败。错误： %s; %s"
+
+#: ps/ModIo.cpp:402
+#, c-format
+msgid "Asynchronous download failure: %s, %s."
+msgstr "出现异常下载失败：%s , %s "
+
+#: ps/ModIo.cpp:430
+#, c-format
+msgid "Download failure. Server response: %s; %s."
+msgstr "下载失败。服务器响应：%s; %s"
+
+#: ps/ModIo.cpp:536
+msgid "Mismatched filesize."
+msgstr "文件大小不匹配。"
+
+#: ps/ModIo.cpp:554
+#, c-format
+msgid "Invalid file. Expected md5 %s, got %s."
+msgstr "无效文件。预期为MD5校验值 %s , 得到 %s "
+
+#: ps/ModIo.cpp:569
+msgid "Failed to compute final hash."
+msgstr "哈希值最终校验失败。"
+
+#: ps/ModIo.cpp:575
+msgid "Failed to verify signature."
+msgstr "签署验证失败。"
+
+#: ps/scripting/JSInterface_Debug.cpp:87
+msgid "custom build"
+msgstr "自定义生成"
+
+#: renderer/Renderer.cpp:690 renderer/Renderer.cpp:816
+#, c-format
+msgid "Screenshot written to '%s'"
+msgstr "截图保存到 '%s'"
