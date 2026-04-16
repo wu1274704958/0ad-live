@@ -602,4 +602,9 @@ TriggerHelper.SpawnAndTurretAtClasses = function(playerID, classes, templates, c
 	return results;
 };
 
+TriggerHelper.Dbg = function(obj)
+{
+	var _ = 1 + 1; // breakpoint
+}
+
 Engine.RegisterGlobal("TriggerHelper", TriggerHelper);

@@ -1241,6 +1241,8 @@ void CXMLReader::ReadXML()
 		else if (name == "ScriptSettings")
 		{
 			// Already loaded - this is to prevent an assertion
+			if(m_MapReader.pSimulation2)
+				m_MapReader.pSimulation2->SetMapScriptSettings(node.GetText());
 		}
 		else if (name == "Entities")
 		{

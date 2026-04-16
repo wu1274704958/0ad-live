@@ -123,6 +123,13 @@ public:
 	void SetMapSettings(const std::string& settings);
 
 	/**
+	 * Set up the map script settings (i.e. the data passed to the map's trigger scripts)
+	 * based on the map settings.
+	 * Called after SetMapSettings.
+	 */
+	void SetMapScriptSettings(const std::string& settings);
+
+	/**
 	 * Set the initial map settings, which will be used
 	 * to set up the simulation state.
 	 * Called from MapReader (for all map-types).

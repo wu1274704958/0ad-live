@@ -77,6 +77,7 @@ public:
 		m_ComponentManager{m_SimContext, cx},
 		m_InitAttributes{cx.GetGeneralJSContext()},
 		m_MapSettings{cx.GetGeneralJSContext()},
+		m_MapScriptSettings{ cx.GetGeneralJSContext() },
 		// Tests won't have config initialised
 		m_EnableOOSLog{CConfigDB::GetIfInitialised("ooslog", false)},
 		m_EnableSerializationTest{CConfigDB::GetIfInitialised("serializationtest", false)},
@@ -139,6 +140,7 @@ public:
 	std::string m_StartupScript;
 	JS::PersistentRootedValue m_InitAttributes;
 	JS::PersistentRootedValue m_MapSettings;
+	JS::PersistentRootedValue m_MapScriptSettings;
 
 	std::set<VfsPath> m_LoadedScripts;
 
@@ -818,6 +820,11 @@ void CSimulation2::SetMapSettings(const std::string& settings)
 	Script::ParseJSON(ScriptRequest(m->m_ComponentManager.GetScriptInterface()), settings, &m->m_MapSettings);
 }
 
+void CSimulation2::SetMapScriptSettings(const std::string& settings)
+{
+	Script::ParseJSON(ScriptRequest(m->m_ComponentManager.GetScriptInterface()), settings, &m->m_MapScriptSettings);
+}
+
 void CSimulation2::SetMapSettings(JS::HandleValue settings)
 {
 	m->m_MapSettings = settings;
@@ -853,7 +860,9 @@ void CSimulation2::LoadMapSettings()
 	ScriptFunction::CallVoid(rq, global, "LoadMapSettings", m->m_MapSettings);
 
 	Script::DeepFreezeObject(rq, m->m_InitAttributes);
+	Script::DeepFreezeObject(rq, m->m_MapScriptSettings);
 	GetScriptInterface().SetGlobal("InitAttributes", m->m_InitAttributes, true, true, true);
+	GetScriptInterface().SetGlobal("MapScriptSettings", m->m_MapScriptSettings, true, true, true);
 
 	if (!m->m_StartupScript.empty())
 		GetScriptInterface().LoadScript(L"map startup script", m->m_StartupScript);

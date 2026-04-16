@@ -1,0 +1,14 @@
+{
+	"Name": "Live test campaign",
+	"Description": "Live test campaign for testing live streaming features.",
+	"Levels": {
+		"one" : {
+			"Name": "Live test level 1",
+			"Map": "scenarios/live_test_1.xml",
+			"MapType": "skirmish",
+			"Description": "This is a live test level for testing live streaming features."
+		}
+	},
+	"Order": [],
+	"ShowUnavailable": true
+}

@@ -47,6 +47,7 @@
 #include <js/ValueArray.h>
 #include <stdexcept>
 #include <string_view>
+#include "graphics/scripting/JSInterface_GameView.h"
 
 class ScriptContext;
 
@@ -107,7 +108,7 @@ CComponentManager::CComponentManager(CSimContext& context, ScriptContext& cx, bo
 		ScriptFunction::Register<&CComponentManager::DestroyComponentsSoon, Getter>(rq, "DestroyEntity");
 		ScriptFunction::Register<&CComponentManager::FlushDestroyedComponents, Getter>(rq, "FlushDestroyedEntities");
 		ScriptFunction::Register<&CComponentManager::Script_GetTemplate, Getter>(rq, "GetTemplate");
-
+		JSI_GameView::RegisterScriptFunctions(rq);
 	}
 
 	// Globalscripts may use VFS script functions
