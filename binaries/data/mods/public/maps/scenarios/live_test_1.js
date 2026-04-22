@@ -14,7 +14,7 @@ if(settings && settings.Camera)
 {
 	warn("Setting CameraData: pos=(" + settings.Camera.pos.x + ", " + settings.Camera.pos.y + ", " + settings.Camera.pos.z + ") rot=(" + settings.Camera.rot.x + ", " + settings.Camera.rot.y + ") zoom=" + settings.Camera.zoom);
 	Engine.SetCameraData(settings.Camera.pos.x, settings.Camera.pos.y, settings.Camera.pos.z,
-				settings.Camera.rot.x, settings.Camera.rot.y, settings.Camera.zoom);
+	 			settings.Camera.rot.x, settings.Camera.rot.y, settings.Camera.zoom);
 }
 else
 {

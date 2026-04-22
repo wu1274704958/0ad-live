@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<script file="gui/testpage/testpage_toggle.js"/>
+
+	<!-- Listen for Alt+F11 to open page_testpage.xml as an overlay -->
+	<object hotkey="testpage.toggle">
+        <action on="Press">onTestPageToggle();</action>
+    </object>
+</objects>

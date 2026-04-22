@@ -186,6 +186,10 @@
 			"session.focusfire": {
 				"name": "Focus Fire",
 				"desc": "Exclusively control a building's arrows without setting a rallypoint."
+			},
+			"testpage.toggle": {
+				"name": "Toggle test page",
+				"desc": "Open or close the test page overlay."
 			}
 		}
 	}
