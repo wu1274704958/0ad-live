@@ -2,11 +2,21 @@
 rem ** Create Visual Studio Workspaces on Windows **
 
 rem Check if --amd64 is passed, and set HOSTTYPE environment variable
+setlocal enabledelayedexpansion
+set "ARGS="
 for %%A in (%*) do (
-    if "%%A"=="--amd64" set HOSTTYPE=amd64
+    if "%%A"=="--amd64" (
+        set "HOSTTYPE=amd64"
+    ) else (
+        if defined ARGS (
+            set "ARGS=!ARGS! %%A"
+        ) else (
+            set "ARGS=%%A"
+        )
+    )
 )
 
 cd /D "%~dp0"
 cd ..\bin
-if not exist ..\workspaces\vs2022\SKIP_PREMAKE_HERE premake5.exe --file="../premake/premake5.lua" --outpath="../workspaces/vs2022" %* vs2022 || exit /b 1
+if not exist ..\workspaces\vs2022\SKIP_PREMAKE_HERE premake5.exe --file="../premake/premake5.lua" --outpath="../workspaces/vs2022" !ARGS! vs2022 || exit /b 1
 cd ..\workspaces
