@@ -878,6 +878,14 @@ var g_Commands = {
 				cmpProductionQueue.DisableAutoQueue();
 		}
 	},
+	"live-spawn-squad": function(player, cmd, data)
+	{
+		const liveModeTrigger = LiveModeTrigger;
+		if (liveModeTrigger)
+			liveModeTrigger.SpawnSquad(cmd);
+		else
+			warn("LiveModeTrigger not found, cannot spawn squad");
+	}
 
 };
 

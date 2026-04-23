@@ -10,7 +10,7 @@ function init(data)
 	};
 
 	Engine.GetGUIObjectByName("team2SpawnButton").onPress = () => {
-		// TODO: Team2 Spawn logic
+		Engine.PostNetworkCommand({ type: "live-spawn-squad" });
 	};
 	return new Promise(closePageCallback => {
 		Engine.GetGUIObjectByName("closeButton").onPress = () => {
