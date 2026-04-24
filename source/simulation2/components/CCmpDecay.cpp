@@ -125,9 +125,12 @@ public:
 
 		m_Stochastic = m_SinkProb < 1.0f;
 
-		std::negative_binomial_distribution<int>::param_type new_params(
-			6, Clamp(m_SinkProb, 1e-3f, 1.0f));
-		m_Distribution.param(new_params);
+		if (m_Stochastic)
+		{
+			std::negative_binomial_distribution<int>::param_type new_params(
+				6, Clamp(m_SinkProb, 1e-3f, 1.0f));
+			m_Distribution.param(new_params);
+		}
 
 		// Detect unsafe misconfiguration
 		if (m_Active && !ENTITY_IS_LOCAL(GetEntityId()))
